@@ -1,0 +1,370 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+@font-face {
+  font-family: 'Salted Monthoers';
+  src: '../fonts/salted-monthoers.otf';
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+body, html {
+  height: 100%;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+button,
+#close-contact-btn,
+#close-menu-btn {
+  cursor: pointer;
+}
+
+.bg-image {
+  position: relative;
+  background: url('../img/beans.jpg')center center;
+  min-height: 100%;
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+
+}
+
+.display-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4.4em;
+  font-family: 'Salted Monthoers', sans-serif;
+  letter-spacing: 6px;
+  text-align: center;
+}
+
+.display-middle p,
+.display-bottom-left p {
+  text-shadow: 2px 2px 5px #222;
+}
+
+.btn {
+  /*background: #000;*/
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  padding: 8px 16px;
+  font-size: 1.2em;
+  outline: none;
+}
+
+.display-top-left {
+  padding: 20px 0 0 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.display-top-left .btn {
+  letter-spacing: 2px;
+}
+
+.display-top-left .btn:hover {
+  background: #000;
+  color: #666;
+}
+
+.display-bottom-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0 0 20px 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  background: rgba(0,0,0,0.4);
+  z-index: 3;
+}
+
+.modal-content {
+  position: relative;
+  padding: 0;
+  outline: 0;
+  width: 96%;
+  margin: 0 auto;
+  background: #fff;
+  color: #222;
+}
+
+.animate-zoom {
+  animation: animatezoom 0.6s;
+}
+
+@keyframes animatezoom {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.menu-items li {
+  padding: 5px 0 5px 10px;
+}
+
+.section-header {
+  background: #000;
+  color: #fff;
+}
+
+.section-header h1 {
+  margin: 0;
+  padding: 10px 0 10px 10px;
+  font-weight: lighter;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+}
+
+.modal-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 4px 12px;
+  border: 1px solid #595959;
+  margin: 5px;
+}
+
+ul.bakery {
+  padding-bottom: 20px;
+}
+
+/* ====================================================================
+                            CONTACT STYLES
+======================================================================= */
+
+#contact .container {
+  padding: 0 10px 15px 10px;
+}
+
+#contact input {
+  padding: 10px;
+  width: 100%;
+  outline: none;
+}
+
+#contact button {
+  border: none;
+  background: #fff;
+  padding: 10px 20px;
+}
+
+#contact button:hover {
+  background: #dadada;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (min-width: 768px) {
+  .modal-content {
+    max-width: 600px;
+  }
+
+  .section-header h1 {
+    font-size: 1.7em;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .modal-content {
+    max-width: 900px;
+  }
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
